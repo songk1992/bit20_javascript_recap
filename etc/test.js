@@ -1,4 +1,25 @@
-const str1 = "(시 23:1), 여호와는 나의 목자시니 내게 부족함이 없으리로다. ";
-console.log(
-    "여호와가 해당 string에서 몇 번 나올까요? : ", 
-    str1.indexOf('여호와'));
+	
+	let Rect = function(x1, y1, x2, y2, color){
+	    this.x1 = x1;
+	    this.y1 = y1;
+	    this.x2 = x2;
+	    this.y2 = y2;
+	    this.color = color;
+	}
+
+	Rect.prototype.show1 = function(){
+	    console.log("[width: " + (this.x2-this.x1) + ", height: " + (this.y2-this.y1) + ", color: " + this.color + "]");
+	}
+	
+	Rect.prototype.show2 = function(){
+	    const rectEl = document.createElement("div");
+	    rectEl.style.left = this.x1 + "px";
+	    rectEl.style.top = this.y1 + "px";
+	    rectEl.style.width = (this.x2-this.x1) + "px";
+	    rectEl.style.height = (this.y2 - this.y1) + "px";
+	}
+
+
+	
+
+// 랜덤하게 만들어서 100개 정도 찍어내보기

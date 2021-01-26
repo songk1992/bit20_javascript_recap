@@ -51,6 +51,11 @@ console.log(b5 + ": " + typeof(b5));
 2-1. 내장객체(Built-In Native) 객체 : 자바스크립트 엔진에 미리 정의되어 있는 객체
 Number, Boolean, Data, RegEx, ... 와 같은 생성자 함수
 parseInt(), 
+2-2 호스트 객체
+호스트가 브라우저인 경우
+document, location, xmlHttpRequest
+2-3. 사용자 객체
+자바스크립트 코드가 엔진에서 실행되는 런타임 객체
 */
 
 
