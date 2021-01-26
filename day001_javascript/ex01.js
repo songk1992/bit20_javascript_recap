@@ -39,7 +39,7 @@ var b3 = new String('Hello World');
 var b4 = new Function("a", "b", "return a + b");
 var b5 = new Object();
 
-console.log(b1 + ": " + typeof(b1));
+console.log(b1 + " : " + typeof(b1) + " : " + (b1 instanceof Number));
 console.log(b2 + ": " + typeof(b2));
 console.log(b3 + ": " + typeof(b3));
 console.log(b4 + ": " + typeof(b4));
